@@ -9,3 +9,4 @@ COPY index.html /data/index.html
 COPY davrunner.sh davrunner.sh
 EXPOSE 8008
 ENTRYPOINT ["/workspace/davserver/davrunner.sh"]
+CMD ["-D","/data","-n","-v","-J","-l","debug","-H","0.0.0.0"]
